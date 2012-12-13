@@ -385,7 +385,7 @@ function eo_get_venues($args=array()){
 	function eo_update_venue($venue_id, $args=array()){
 
 		$term_args = array_intersect_key($args, array('name'=>'','term_id'=>'','term_group'=>'','term_taxonomy_id'=>'','alias_of'=>'','parent'=>0,'slug'=>'','count'=>''));
-		$meta_args = array_intersect_key($args, array('description'=>'','address'=>'','postcode'=>'','country'=>'','latitude'=>'','longtitude'=>''));
+		$meta_args = array_intersect_key($args, array('description'=>'','address'=>'','postcode'=>'','city'=>'','country'=>'','latitude'=>'','longtitude'=>''));
 		$venue_id = (int) $venue_id;
 
 
